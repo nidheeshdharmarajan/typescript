@@ -1,13 +1,13 @@
 import React from "react";
 
 import Todos from "./components/Todos";
+import Todo from "./models/Todo";
 
 function App() {
-  let arrays = ["list 1", "List 2", "Nothing"];
+  let todo = [new Todo("swimm"), new Todo("dance")];
   return (
     <div>
-      <h1>hellow</h1>
-      <Todos items={arrays} />
+      <Todos items={todo} />
     </div>
   );
 }
